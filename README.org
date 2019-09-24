@@ -5,4 +5,6 @@
 Project 13 - Days 52-54 - HackingWithSwift.com/100
 
 ** Day 52
+Layout of the app and implementing UIImagePickerController() to select an app from the Photo Library.
 
+[[day52.png]]
