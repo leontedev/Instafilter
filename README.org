@@ -2,9 +2,12 @@
 
 *Add filters and save photots to Camera Roll*
 
+[[day53.gif]]
+
 Project 13 - Days 52-54 - HackingWithSwift.com/100
 
 ** Day 52
 Layout of the app and implementing UIImagePickerController() to select an app from the Photo Library.
-
-[[day52.png]]
+** Day 53
+ - Applying CoreImage filters to UIImages (CIContext & CIFilter).
+ - Saving the image back to the iOS Photo Library using UIImageWriteToSavedPhotosAlbum()
