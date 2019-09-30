@@ -37,6 +37,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         picker.delegate = self
         picker.allowsEditing = true
         present(picker, animated: true)
+        // Day 58 Challenge
+        self.imageView?.alpha = 0
         // Don't forget about modifying the Info.plist with the Privacy strings.
     }
 
@@ -102,6 +104,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         guard let image = info[.editedImage] as? UIImage else { return }
         dismiss(animated: true)
         currentImage = image
+        // Day 58 Challenge - fade in
+        UIView.animate(withDuration: 2) {
+            self.imageView?.alpha = 1
+        }
         
         let beginImage = CIImage(image: currentImage)
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
